@@ -1,0 +1,13 @@
+# Spray Foam Removal Birmingham
+> Spray foam insulation removal across Birmingham and the West Midlands. Free, no-obligation quote.
+
+## Core pages
+- [Homepage](https://sprayfoamremoval-birmingham.co.uk/): Service overview, costs, FAQs
+- [How removal works](https://sprayfoamremoval-birmingham.co.uk/how-spray-foam-removal-works): Step-by-step process
+- [Costs](https://sprayfoamremoval-birmingham.co.uk/spray-foam-removal-cost): UK 2026 price guide
+- [Contact](https://sprayfoamremoval-birmingham.co.uk/contact): Get a free quote
+- [About](https://sprayfoamremoval-birmingham.co.uk/about): About us
+
+## Pages to be populated as built
+- Service areas (Sutton Coldfield, Solihull, Edgbaston, Harborne, Erdington, Wolverhampton, Dudley)
+- Guides (mortgage problems, RICS guidance, PAS 2035, selling, health, signs, timeline, DIY warning, grants)
