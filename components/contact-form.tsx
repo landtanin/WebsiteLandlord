@@ -31,6 +31,7 @@ export function ContactForm({ onSubmit }: Props) {
           type="text"
           required
           className="w-full rounded-md border border-gray-300 px-3 py-2"
+          suppressHydrationWarning
         />
       </div>
 
@@ -44,6 +45,7 @@ export function ContactForm({ onSubmit }: Props) {
           type="tel"
           required
           className="w-full rounded-md border border-gray-300 px-3 py-2"
+          suppressHydrationWarning
         />
       </div>
 
@@ -57,6 +59,7 @@ export function ContactForm({ onSubmit }: Props) {
           type="text"
           required
           className="w-full rounded-md border border-gray-300 px-3 py-2"
+          suppressHydrationWarning
         />
       </div>
 
@@ -68,6 +71,7 @@ export function ContactForm({ onSubmit }: Props) {
           id="propertyType"
           name="propertyType"
           className="w-full rounded-md border border-gray-300 px-3 py-2 bg-white"
+          suppressHydrationWarning
         >
           <option value="">— Select —</option>
           <option>Mid-terrace</option>
@@ -87,6 +91,7 @@ export function ContactForm({ onSubmit }: Props) {
           name="message"
           rows={4}
           className="w-full rounded-md border border-gray-300 px-3 py-2"
+          suppressHydrationWarning
         />
       </div>
 
@@ -99,6 +104,7 @@ export function ContactForm({ onSubmit }: Props) {
           onChange={(e) => setConsent(e.target.checked)}
           required
           className="mt-1"
+          suppressHydrationWarning
         />
         <label htmlFor="consent" className="text-sm text-gray-700 leading-snug">
           I consent to my details being used to arrange a survey or quote for my property.
