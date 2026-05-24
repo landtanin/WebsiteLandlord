@@ -3,6 +3,7 @@
 
 export const siteConfig = {
   tradingName: 'Spray Foam Removal Birmingham',
+  tradingNameShort: 'SFR Birmingham',
   legalEntity: 'Taninnovate Ltd',
   domain: 'sprayfoamremoval-birmingham.co.uk',
   url: 'https://sprayfoamremoval-birmingham.co.uk',
