@@ -4,10 +4,33 @@
 ## Core pages
 - [Homepage](https://sprayfoamremoval-birmingham.co.uk/): Service overview, costs, FAQs
 - [How removal works](https://sprayfoamremoval-birmingham.co.uk/how-spray-foam-removal-works): Step-by-step process
-- [Costs](https://sprayfoamremoval-birmingham.co.uk/spray-foam-removal-cost): UK 2026 price guide
+- [Costs](https://sprayfoamremoval-birmingham.co.uk/spray-foam-removal-cost): Birmingham cost factors and source-safe quote guidance
+- [Service areas](https://sprayfoamremoval-birmingham.co.uk/areas): Birmingham and West Midlands area hub
+- [Guides](https://sprayfoamremoval-birmingham.co.uk/guides): Spray foam removal guide hub
 - [Contact](https://sprayfoamremoval-birmingham.co.uk/contact): Get a free quote
 - [About](https://sprayfoamremoval-birmingham.co.uk/about): About us
+- [Editorial standards](https://sprayfoamremoval-birmingham.co.uk/editorial-standards): How content is researched and reviewed
+- [Privacy](https://sprayfoamremoval-birmingham.co.uk/privacy): Privacy and data-sharing policy
+- [Terms](https://sprayfoamremoval-birmingham.co.uk/terms): Terms of service
+- [Cookies](https://sprayfoamremoval-birmingham.co.uk/cookies): Cookie policy
 
-## Pages to be populated as built
-- Service areas (Sutton Coldfield, Solihull, Edgbaston, Harborne, Erdington, Wolverhampton, Dudley)
-- Guides (mortgage problems, RICS guidance, PAS 2035, selling, health, signs, timeline, DIY warning, grants)
+## Service areas
+- [Sutton Coldfield](https://sprayfoamremoval-birmingham.co.uk/areas/sutton-coldfield)
+- [Solihull](https://sprayfoamremoval-birmingham.co.uk/areas/solihull)
+- [Edgbaston](https://sprayfoamremoval-birmingham.co.uk/areas/edgbaston)
+- [Harborne](https://sprayfoamremoval-birmingham.co.uk/areas/harborne)
+- [Erdington](https://sprayfoamremoval-birmingham.co.uk/areas/erdington)
+- [Wolverhampton](https://sprayfoamremoval-birmingham.co.uk/areas/wolverhampton)
+- [Dudley](https://sprayfoamremoval-birmingham.co.uk/areas/dudley)
+
+## Guides
+- [Spray foam mortgage problems](https://sprayfoamremoval-birmingham.co.uk/guides/spray-foam-mortgage-problems)
+- [Open-cell vs closed-cell spray foam](https://sprayfoamremoval-birmingham.co.uk/guides/open-cell-vs-closed-cell-spray-foam)
+- [PAS 2035 spray foam explained](https://sprayfoamremoval-birmingham.co.uk/guides/pas-2035-spray-foam-explained)
+- [RICS guidance spray foam](https://sprayfoamremoval-birmingham.co.uk/guides/rics-guidance-spray-foam)
+- [Selling a house with spray foam](https://sprayfoamremoval-birmingham.co.uk/guides/selling-house-with-spray-foam)
+- [Spray foam health risks](https://sprayfoamremoval-birmingham.co.uk/guides/spray-foam-health-risks)
+- [Signs spray foam needs removal](https://sprayfoamremoval-birmingham.co.uk/guides/signs-spray-foam-needs-removal)
+- [How long spray foam removal takes](https://sprayfoamremoval-birmingham.co.uk/guides/how-long-spray-foam-removal-takes)
+- [DIY spray foam removal warning](https://sprayfoamremoval-birmingham.co.uk/guides/diy-spray-foam-removal-warning)
+- [Spray foam grant removal options](https://sprayfoamremoval-birmingham.co.uk/guides/spray-foam-grant-removal-options)

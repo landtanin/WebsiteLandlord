@@ -1,12 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { siteConfig } from '@/lib/site-config';
 
 type Props = {
-  onSubmit?: (data: FormData) => Promise<void> | void;
+  submitAction?: (data: FormData) => Promise<void> | void;
 };
 
-export function ContactForm({ onSubmit }: Props) {
+export function ContactForm({ submitAction }: Props) {
   const [consent, setConsent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
@@ -15,7 +17,14 @@ export function ContactForm({ onSubmit }: Props) {
     if (!consent) return;
     setSubmitting(true);
     const formData = new FormData(e.currentTarget);
-    if (onSubmit) await onSubmit(formData);
+    if (submitAction) await submitAction(formData);
+    if (!submitAction) {
+      window.location.href = `tel:${siteConfig.phone.tel}`;
+      setSubmitting(false);
+      return;
+    }
+    e.currentTarget.reset();
+    setConsent(false);
     setSubmitting(false);
   }
 
@@ -116,14 +125,15 @@ export function ContactForm({ onSubmit }: Props) {
         disabled={!consent || submitting}
         className="w-full rounded-md bg-brand-accent px-4 py-3 text-white font-semibold hover:bg-orange-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {submitting ? 'Sending…' : 'Get a free quote'}
+        {submitting ? 'Sending...' : 'Get a free quote'}
       </button>
 
       <p className="text-xs text-gray-500 leading-relaxed">
         By submitting, you consent to your details being used to arrange a survey or quote for
-        your property. We are a trading name of Taninnovate Ltd and may receive a referral fee
-        when introductions lead to completed work. See our{' '}
-        <a href="/privacy" className="underline">privacy policy</a>. Calls may be recorded.
+        your property. We are a trading name of {siteConfig.legalEntity} and may receive a referral
+        fee when introductions lead to completed work. See our{' '}
+        <Link href="/privacy" className="underline">privacy policy</Link>. On GitHub Pages, this form
+        opens the phone dialler until server-side lead capture is connected. Calls may be recorded.
       </p>
     </form>
   );

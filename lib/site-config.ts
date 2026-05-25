@@ -5,20 +5,16 @@ export const siteConfig = {
   tradingName: 'Spray Foam Removal Birmingham',
   tradingNameShort: 'SFR Birmingham',
   legalEntity: 'Taninnovate Ltd',
-  domain: 'sprayfoamremoval-birmingham.co.uk',
-  url: 'https://sprayfoamremoval-birmingham.co.uk',
+  domain: process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'landtanin.github.io/WebsiteLandlord',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://landtanin.github.io/WebsiteLandlord',
   phone: {
     display: '0121 XXX XXXX',
     tel: '+441211234567',
     schema: '+44-121-XXX-XXXX',
   },
-  founder: {
-    name: 'Tanin',
-    linkedin: 'https://www.linkedin.com/in/[founder-handle]',
-  },
   companyNumber: 'TBD',
   icoRegNumber: 'TBD',
-  email: 'hello@sprayfoamremoval-birmingham.co.uk',
+  email: process.env.NEXT_PUBLIC_SITE_EMAIL ?? 'hello@sprayfoamremoval-birmingham.co.uk',
   hours: 'Mon–Sat 08:00–20:00',
   geo: {
     latitude: 52.4862,
