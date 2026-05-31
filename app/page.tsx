@@ -137,7 +137,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(pageJsonLd)} />
 
       <section className="bg-gray-50 border-b border-gray-200">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-20">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:py-20">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-brand-accent">
               Birmingham &amp; West Midlands
