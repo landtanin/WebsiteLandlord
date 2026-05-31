@@ -65,9 +65,9 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-950 mb-3">Who runs the site?</h2>
           <p>
-            The site is operated by {siteConfig.legalEntity} under the trading name{' '}
-            {siteConfig.tradingName}. Company and data-protection registration details are listed
-            below and will be completed before public launch.
+            The site is published under the trading name {siteConfig.tradingName}. It exists to help
+            Birmingham homeowners understand spray foam insulation problems and decide what to do
+            next.
           </p>
         </section>
 
@@ -92,23 +92,15 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-gray-950 mb-3">Company details</h2>
+          <h2 className="text-2xl font-semibold text-gray-950 mb-3">Site details</h2>
           <dl className="grid grid-cols-1 gap-4 rounded-md border border-gray-200 bg-gray-50 p-6 sm:grid-cols-2">
             <div>
               <dt className="font-semibold text-gray-950">Trading name</dt>
               <dd>{siteConfig.tradingName}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-gray-950">Legal entity</dt>
-              <dd>{siteConfig.legalEntity}</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-gray-950">Company number</dt>
-              <dd>{siteConfig.companyNumber}</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-gray-950">ICO registration</dt>
-              <dd>{siteConfig.icoRegNumber}</dd>
+              <dt className="font-semibold text-gray-950">Contact</dt>
+              <dd>{siteConfig.email}</dd>
             </div>
           </dl>
         </section>

@@ -196,7 +196,7 @@ Or fill in the form and we'll call you back within one working day.
 
 *Beneath the form, small print (light grey, smaller font):*
 
-By submitting, you consent to your details being used to arrange a survey or quote for your property. We are a trading name of Taninnovate Ltd and may receive a referral fee when introductions lead to completed work. See our [privacy policy](/privacy). Calls may be recorded.
+By submitting, you consent to your details being used to arrange a survey or quote for your property. [Trading Name] may receive a referral fee when introductions lead to completed work. See our [privacy policy](/privacy). Calls may be recorded.
 
 ---
 
@@ -208,7 +208,7 @@ By submitting, you consent to your details being used to arrange a survey or quo
 
 ## Schema (implementation note for dev)
 
-JSON-LD `@graph`: **Organization** (Taninnovate Ltd, with `sameAs` to Companies House + LinkedIn) + **Service** (with `areaServed` as `GeoCircle` covering 30km from Birmingham) + **BreadcrumbList**. Full Organization pattern is in `CONTENT-BRIEF.md` §5.
+JSON-LD `@graph`: **Organization** (trading name only) + **Service** (with `areaServed` as `GeoCircle` covering 30km from Birmingham) + **BreadcrumbList**. Full Organization pattern is in `CONTENT-BRIEF.md` §5.
 
 **Deliberately NOT included** in phase 1: `LocalBusiness` (no verified premises), `FAQPage` (restricted Aug 2023), `HowTo` (deprecated Sept 2023), `aggregateRating` / `Review` (no real reviews yet).
 

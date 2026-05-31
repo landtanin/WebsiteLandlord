@@ -35,16 +35,11 @@ export function Footer() {
 
         <div className="mt-8 pt-6 border-t border-gray-800 text-xs text-gray-400 space-y-2">
           <p>
-            {siteConfig.tradingName} is a trading name of {siteConfig.legalEntity}, registered in
-            England and Wales (Company No. {siteConfig.companyNumber}). ICO Reg No:{' '}
-            {siteConfig.icoRegNumber}.
-          </p>
-          <p>
             We may receive a referral fee when introductions lead to completed work — this does not
             affect the price you pay the specialist.
           </p>
           <p>
-            &copy; {new Date().getFullYear()} {siteConfig.legalEntity}. All rights reserved.
+            &copy; {new Date().getFullYear()} {siteConfig.tradingName}. All rights reserved.
           </p>
         </div>
       </div>
