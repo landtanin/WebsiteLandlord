@@ -1,9 +1,10 @@
 // Single source of truth for site-wide values that need swapping before launch.
-// Search for bracketed placeholders to find what's left.
+// Search for "TBD" or any of the bracketed placeholders to find what's left.
 
 export const siteConfig = {
   tradingName: 'Spray Foam Removal Birmingham',
   tradingNameShort: 'SFR Birmingham',
+  legalEntity: 'Taninnovate Ltd',
   domain: process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'landtanin.github.io/WebsiteLandlord',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://landtanin.github.io/WebsiteLandlord',
   phone: {
@@ -11,6 +12,8 @@ export const siteConfig = {
     tel: '+441211234567',
     schema: '+44-121-XXX-XXXX',
   },
+  companyNumber: 'TBD',
+  icoRegNumber: 'TBD',
   email: process.env.NEXT_PUBLIC_SITE_EMAIL ?? 'hello@sprayfoamremoval-birmingham.co.uk',
   hours: 'Mon–Sat 08:00–20:00',
   geo: {

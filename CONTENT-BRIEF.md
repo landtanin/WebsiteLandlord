@@ -13,7 +13,7 @@
 ## 0. Project Overview
 
 **Site:** Birmingham Spray Foam Removal (trading name TBD — examples: "Birmingham Spray Foam Solutions", "Spray Foam Removal Birmingham", "BSFR")
-**Legal entity:** Not specified in this brief.
+**Legal entity:** Trading name of Taninnovate Ltd
 **Positioning:** Birmingham-focused **independent information resource and enquiry-routing service**. We help Birmingham homeowners understand spray foam insulation problems and connect them with local removal specialists when they're ready for a quote. **We are not a removal contractor, we have no own-staff surveyors, and we do not perform removal work.** We earn a referral fee when introductions lead to completed work.
 **Primary audience:** Homeowners in Greater Birmingham who had spray foam insulation installed 5–20 years ago and now face mortgage, sale, or damage problems.
 **Primary commercial action:** Phone call (rings to founder personally during phase 1) or enquiry form. Both capture details for partner routing once supply side is signed.
@@ -45,7 +45,7 @@ This brief covers phase 1 with hooks to evolve into phase 2/3 without rewriting 
 - Optional: small "Birmingham & West Midlands" tag near the logo (light positioning support without explicit denial)
 
 ### Footer
-- Trading name disclosure: omitted for now.
+- Trading name disclosure: `"[Trading Name] is a trading name of Taninnovate Ltd, registered in England and Wales (Company No. [TBD]). Registered office: [TBD]. ICO Reg No: [TBD]."`
 - **Business model disclosure** (one line): "We are an independent information resource. We earn a referral fee when introductions lead to completed work — this does not affect the price you pay the specialist."
 - Quick links: Privacy Policy, Terms, Cookie Policy, Sitemap, About
 - Copyright + year
@@ -296,11 +296,12 @@ The 10 guides themselves are unchanged from v2 — they're educational content w
 - **Named founder/operator** (Tanin) — photo, role, LinkedIn link, short bio
 - **What we do** (one paragraph, no callouts): "We help Birmingham homeowners with spray foam insulation problems by combining plain-English guidance with introductions to local removal specialists. We may receive a referral fee when introductions lead to completed work — the information on this site stays free either way."
 - **Why we built it**: "Spray foam information online is dominated by removal companies selling their service. There's room for a Birmingham-focused resource that explains the problem first."
-- **Trading name disclosure** (no operator entity stated)
+- **Trading name + Companies House disclosure** (link to public Companies House page for Taninnovate Ltd)
+- **ICO registration number**
 - **Editorial standards link** → `/editorial-standards`
 - **Partner with us** (one-line footer, soft): "Are you a Birmingham removal specialist? [Contact us]."
 
-**Schema:** AboutPage + Organization + BreadcrumbList
+**Schema:** AboutPage + Organization (with `sameAs`: Companies House URL, LinkedIn, socials) + BreadcrumbList
 
 ---
 
@@ -318,7 +319,7 @@ Sections: how guides are researched (primary sources: RICS, PAS 2035, HSE, lende
 
 **Critical inclusions (updated for lead-gen model):**
 
-- Privacy contact email
+- Data controller identification (Taninnovate Ltd, ICO Reg No)
 - What data we collect (name, phone, postcode, property type, message, call recordings, IP/analytics)
 - **Lawful basis** — for data sharing with removal specialists: **consent** captured at form submission (un-prechecked tickbox). Call recording: legitimate interest with LIA documented.
 - **Data sharing disclosure**: "By submitting an enquiry, you consent to your details being shared with a removal specialist in your area for the purpose of providing you with a quote. You can withdraw consent at any time by emailing [address]. Until a partner specialist has been signed for your area, we will hold your details only as long as needed to make an introduction."
@@ -331,7 +332,7 @@ Sections: how guides are researched (primary sources: RICS, PAS 2035, HSE, lende
 - Cookie usage
 - Last updated date
 
-**Must be live before any traffic arrives.**
+**Must be live before any traffic arrives. ICO registration must be complete.**
 
 ---
 
@@ -351,7 +352,7 @@ The site is an **Organization** that provides a **Service** (free enquiry matchi
 - Claiming LocalBusiness/HomeAndConstructionBusiness when we don't do the work is misleading schema and risks a manual action
 
 ### Site-wide
-- **Organization** schema in root layout (trading name only)
+- **Organization** schema in root layout (Taninnovate Ltd, with `sameAs`: Companies House URL, LinkedIn, socials)
 - **WebSite** schema with SearchAction
 - **BreadcrumbList** on all non-root pages
 
@@ -382,6 +383,7 @@ The site is an **Organization** that provides a **Service** (free enquiry matchi
   "@type": "Organization",
   "@id": "https://example.co.uk/#organization",
   "name": "[Trading Name]",
+  "legalName": "Taninnovate Ltd",
   "url": "https://example.co.uk",
   "logo": "https://example.co.uk/logo.png",
   "image": "https://example.co.uk/og-default.jpg",
@@ -489,6 +491,7 @@ No firm prices in title tags in phase 1.
 - **Trading name** chosen (§10 question #2)
 - **Domain** registered (§10 question #1)
 - **Named author / founder** decided (§10 question #4) — drives About, schema, bylines
+- **ICO registration** initiated for Taninnovate Ltd
 - **Cost-page citations researched and selected** — 3–5 real UK source URLs for cost figures
 
 **Step 0.5 (disclosure-first order, new in v3):**
@@ -527,7 +530,7 @@ Ship early. Don't wait for all 20+ pages.
    - `birminghamsprayfoamremoval.co.uk`
    - `sprayfoamremovalbham.co.uk`
    - `removesprayfoam-birmingham.co.uk`
-2. **Trading name:** Pick one. Affects logo and email.
+2. **Trading name:** Pick one. Affects logo, email, Companies House.
 3. **Logo:** AI-generated or typographic? Either fine for v1.
 4. **Author identity (critical):** Use real name + photo + LinkedIn? **Recommendation: yes.** Anonymous trading-name voice fails E-E-A-T for YMYL-adjacent content and undermines the "independent resource" positioning.
 5. **Image strategy:** Stock, AI, or commissioned Birmingham photographer (~£500)? **Recommendation: real local photos for area pages, AI/diagrams elsewhere.**
@@ -540,7 +543,8 @@ Ship early. Don't wait for all 20+ pages.
 Must be complete before public launch / first marketing spend:
 
 ### Legal & compliance
-- [ ] Footer carries referral-fee disclosure
+- [ ] Taninnovate Ltd company number visible in footer
+- [ ] ICO registration complete; reg number in footer + privacy policy
 - [ ] Privacy policy live with PECR-compliant call-recording disclosure
 - [ ] Privacy policy includes data-sharing consent flow + referral-fee disclosure
 - [ ] Terms of service live (includes "we are not a removal contractor" disclaimer)

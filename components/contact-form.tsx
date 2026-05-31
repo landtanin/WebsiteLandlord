@@ -130,8 +130,8 @@ export function ContactForm({ submitAction }: Props) {
 
       <p className="text-xs text-gray-500 leading-relaxed">
         By submitting, you consent to your details being used to arrange a survey or quote for
-        your property. {siteConfig.tradingName} may receive a referral fee when introductions lead
-        to completed work. See our{' '}
+        your property. We are a trading name of {siteConfig.legalEntity} and may receive a referral
+        fee when introductions lead to completed work. See our{' '}
         <Link href="/privacy" className="underline">privacy policy</Link>. On GitHub Pages, this form
         opens the phone dialler until server-side lead capture is connected. Calls may be recorded.
       </p>

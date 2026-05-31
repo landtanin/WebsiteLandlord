@@ -56,8 +56,8 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-950 mb-3">Who operates this site</h2>
           <p>
-            {siteConfig.tradingName} is a Birmingham spray foam information and enquiry-routing
-            website. Contact email:{' '}
+            {siteConfig.tradingName} is operated by {siteConfig.legalEntity}. Company number:{' '}
+            {siteConfig.companyNumber}. Contact email:{' '}
             <a href={`mailto:${siteConfig.email}`} className="text-brand-primary underline">
               {siteConfig.email}
             </a>

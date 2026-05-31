@@ -46,8 +46,9 @@ export default function PrivacyPage() {
         </p>
         <h1 className="text-4xl font-bold text-brand-primary mb-4">Privacy Policy</h1>
         <p className="text-lg text-gray-700">
-          This policy explains how personal data from this website and our advertised phone number
-          is handled.
+          This policy explains how {siteConfig.legalEntity}, operating the trading name{' '}
+          {siteConfig.tradingName}, handles personal data from this website and our advertised
+          phone number.
         </p>
         <p className="mt-3 text-sm text-gray-600">Last updated: 24 May 2026</p>
       </header>
@@ -56,7 +57,8 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-950 mb-3">Data controller</h2>
           <p>
-            For privacy questions or data requests, contact us at{' '}
+            The data controller is {siteConfig.legalEntity}. ICO registration number:{' '}
+            {siteConfig.icoRegNumber}. You can contact us at{' '}
             <a href={`mailto:${siteConfig.email}`} className="text-brand-primary underline">
               {siteConfig.email}
             </a>

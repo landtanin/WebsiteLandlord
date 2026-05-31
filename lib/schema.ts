@@ -30,6 +30,7 @@ export function organizationJsonLd() {
     '@type': 'Organization',
     '@id': `${siteConfig.url}/#organization`,
     name: siteConfig.tradingName,
+    legalName: siteConfig.legalEntity,
     url: siteConfig.url,
     telephone: siteConfig.phone.schema,
     email: siteConfig.email,
@@ -49,6 +50,9 @@ export function organizationJsonLd() {
       'Open-cell and closed-cell foam',
       'Loft insulation remediation',
       'Mortgage implications of spray foam',
+    ],
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.companyNumber}`,
     ],
   };
 }
