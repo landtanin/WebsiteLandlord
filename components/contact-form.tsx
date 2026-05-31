@@ -4,32 +4,69 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/lib/site-config';
 
-type Props = {
-  submitAction?: (data: FormData) => Promise<void> | void;
-};
+type SubmitState = 'idle' | 'success' | 'error';
 
-export function ContactForm({ submitAction }: Props) {
+export function ContactForm() {
   const [consent, setConsent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [submitState, setSubmitState] = useState<SubmitState>('idle');
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!consent) return;
+
     setSubmitting(true);
-    const formData = new FormData(e.currentTarget);
-    if (submitAction) await submitAction(formData);
-    if (!submitAction) {
-      window.location.href = `tel:${siteConfig.phone.tel}`;
+    setSubmitState('idle');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.set('_subject', `${siteConfig.tradingName} quote enquiry`);
+    formData.set('source', window.location.href);
+
+    try {
+      const response = await fetch(siteConfig.forms.quoteEndpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        setSubmitState('error');
+        return;
+      }
+
+      form.reset();
+      setConsent(false);
+      setSubmitState('success');
+    } catch {
+      setSubmitState('error');
+    } finally {
       setSubmitting(false);
-      return;
     }
-    e.currentTarget.reset();
-    setConsent(false);
-    setSubmitting(false);
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {submitState === 'success' && (
+        <div
+          role="status"
+          className="rounded-md border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800"
+        >
+          Thanks. Your enquiry has been sent and someone will get back to you.
+        </div>
+      )}
+
+      {submitState === 'error' && (
+        <div
+          role="alert"
+          className="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800"
+        >
+          Sorry, the form could not be sent. Please call {siteConfig.phone.display} instead.
+        </div>
+      )}
+
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
           Your name
@@ -132,8 +169,7 @@ export function ContactForm({ submitAction }: Props) {
         By submitting, you consent to your details being used to arrange a survey or quote for
         your property. We are a trading name of {siteConfig.legalEntity} and may receive a referral
         fee when introductions lead to completed work. See our{' '}
-        <Link href="/privacy" className="underline">privacy policy</Link>. On GitHub Pages, this form
-        opens the phone dialler until server-side lead capture is connected. Calls may be recorded.
+        <Link href="/privacy" className="underline">privacy policy</Link>. Calls may be recorded.
       </p>
     </form>
   );

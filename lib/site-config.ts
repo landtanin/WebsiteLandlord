@@ -15,6 +15,9 @@ export const siteConfig = {
   companyNumber: 'TBD',
   icoRegNumber: 'TBD',
   email: process.env.NEXT_PUBLIC_SITE_EMAIL ?? 'hello@sprayfoamremoval-birmingham.co.uk',
+  forms: {
+    quoteEndpoint: 'https://formspree.io/f/mlgvydnl',
+  },
   hours: 'Mon–Sat 08:00–20:00',
   geo: {
     latitude: 52.4862,
