@@ -34,8 +34,8 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: 'true'
-          NEXT_PUBLIC_SITE_URL: https://landtanin.github.io/WebsiteLandlord
-          NEXT_PUBLIC_SITE_DOMAIN: landtanin.github.io/WebsiteLandlord
+          NEXT_PUBLIC_SITE_URL: https://birminghamsprayfoamremoval.com
+          NEXT_PUBLIC_SITE_DOMAIN: birminghamsprayfoamremoval.com
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

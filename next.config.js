@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
-const repoName = 'WebsiteLandlord';
+const githubPagesBasePath = process.env.GITHUB_PAGES_BASE_PATH;
 
 const nextConfig = {
   output: 'export',
@@ -8,8 +8,8 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: isGithubPages ? `/${repoName}` : undefined,
-  assetPrefix: isGithubPages ? `/${repoName}/` : undefined,
+  basePath: isGithubPages && githubPagesBasePath ? githubPagesBasePath : undefined,
+  assetPrefix: isGithubPages && githubPagesBasePath ? `${githubPagesBasePath}/` : undefined,
   ...(isGithubPages
     ? {}
     : {
