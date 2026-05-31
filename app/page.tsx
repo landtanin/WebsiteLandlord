@@ -188,7 +188,7 @@ export default function HomePage() {
             <div className="rounded-md border border-gray-200 bg-white p-6 shadow-sm">
               <h2 className="text-xl font-semibold text-gray-950">Quick enquiry</h2>
               <p className="mt-2 text-sm text-gray-600">
-                Tell us what is happening with the property and we will call back.
+                Let us know what concerns you have with the property and we will get back to you.
               </p>
               <div className="mt-5">
                 <ContactForm />

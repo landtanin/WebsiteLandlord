@@ -111,8 +111,8 @@ export default function ContactPage() {
         <h2 className="text-2xl font-semibold text-gray-950">Service area</h2>
         <p className="mt-3 text-gray-700">
           We cover {siteConfig.serviceAreas.join(', ')} and surrounding West Midlands postcodes.
-          If you are nearby but outside this list, call anyway and we will tell you whether we can
-          help.
+          If you are outside this list but not too far, it may be worth a call anyway and we will
+          let you know whether we are able to help.
         </p>
       </section>
     </article>
