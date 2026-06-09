@@ -68,8 +68,8 @@ export default function ContactPage() {
               <PhoneCTA variant="large" showHours />
             </div>
             <p className="mt-5 text-sm text-gray-600">
-              Calls may be recorded once call tracking is live. The phone number is currently a
-              placeholder until the Twilio number is added.
+              Calls are handled through our phone system so enquiries can be tracked and followed
+              up.
             </p>
           </div>
 

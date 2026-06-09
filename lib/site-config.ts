@@ -8,9 +8,9 @@ export const siteConfig = {
   domain: process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'landtanin.github.io/WebsiteLandlord',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://landtanin.github.io/WebsiteLandlord',
   phone: {
-    display: '0121 XXX XXXX',
-    tel: '+441211234567',
-    schema: '+44-121-XXX-XXXX',
+    display: '07366 236668',
+    tel: '+447366236668',
+    schema: '+44-7366-236668',
   },
   companyNumber: 'TBD',
   icoRegNumber: 'TBD',
